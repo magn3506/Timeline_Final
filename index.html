@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="site_wrapper">
+      <div class="site_con">
+        <div class="bg_svg_con">
+          <svg
+            preserveAspectRatio="none"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 100 100"
+          >
+            <title>Background</title>
+            <rect class="bg_rect" width="100" height="100" />
+            <polygon class="bg_poly" points="0,100 0,0 0,0 0,100" />
+          </svg>
+        </div>
+        <div class="site_content_container" id="output">
+          <div class="time_live_nav">
+            <ul id="timeline_nav"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <template id="target">
+      <section id="" class="movie_wrap">
+        <article class="movie_con">
+          <div class="head_wrap">
+            <div class="head_con">
+              <div class="title">
+                <div class="date">30. april</div>
+                <span class="h_title">Guardians of the galaxy</span>
+                <div class="sub_n_year">
+                  <div class="sub_title">The First Avenger</div>
+                  <div class="year">2008</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="head_svg_con">
+            <div class="head_svg">
+              <img class="h_img" src="" alt="" />
+            </div>
+          </div>
+          <div class="data_con">
+            <div class="imdb_con">
+              <div class="imdb_logo">IMDb</div>
+              <div class="imdb_data">7,9</div>
+            </div>
+            <div class="runtime_con">
+              <div class="runtime_icon">
+                <svg
+                  viewBox="0 0 75 71"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.6813 2.58344C49.7998 2.61961 59.5049 7.35076 65.688 15.3956C71.9554 23.5627 74.0084 34.4476 71.1993 44.344C68.4746 53.8596 61.3323 61.8924 52.1679 65.6419C42.6161 69.5446 31.5572 68.7145 22.727 63.3719C14.2223 58.2257 8.29761 49.1922 7.15228 39.2925C7.00334 37.9801 6.92744 36.6605 6.92494 35.3398C6.92494 33.6778 4.34149 33.6743 4.34149 35.3398C4.36668 40.7725 5.63311 46.1276 8.04406 50.996C10.455 55.8645 13.9467 60.1176 18.2525 63.4304C27.0207 70.1474 38.7478 72.3571 49.3727 69.3328C59.734 66.3842 68.28 58.6545 72.3877 48.7238C76.6073 38.514 75.6601 26.5268 69.9438 17.0817C64.305 7.76583 54.5482 1.53112 43.7528 0.241122C42.4014 0.0824709 41.042 0.00196288 39.6813 0C38.0176 0 38.0158 2.58344 39.6813 2.58344V2.58344Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M39.6814 2.58344C41.3434 2.58344 41.3469 0 39.6814 0C38.0159 0 38.0159 2.58344 39.6814 2.58344Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M5.63325 36.6315C7.29527 36.6315 7.29871 34.0481 5.63325 34.0481C3.96779 34.0481 3.96779 36.6315 5.63325 36.6315Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M39.6814 2.58344C41.3434 2.58344 41.3469 0 39.6814 0C38.0159 0 38.0159 2.58344 39.6814 2.58344Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M5.22333 26.4372C5.26864 26.3585 5.33388 26.2932 5.4125 26.2477C5.49111 26.2022 5.58032 26.1783 5.67113 26.1783C5.76194 26.1783 5.85115 26.2022 5.92976 26.2477C6.00838 26.2932 6.07362 26.3585 6.11893 26.4372L8.70237 30.8997L11.2858 35.3604C11.3316 35.4391 11.3558 35.5284 11.356 35.6193C11.3562 35.7103 11.3324 35.7997 11.287 35.8786C11.2415 35.9574 11.1761 36.0228 11.0973 36.0682C11.0184 36.1136 10.929 36.1374 10.838 36.1372H0.51802C0.427041 36.1374 0.337612 36.1136 0.258778 36.0682C0.179943 36.0228 0.114497 35.9574 0.069058 35.8786C0.0236186 35.7997 -0.000203287 35.7103 1.30682e-06 35.6193C0.0002059 35.5284 0.0244295 35.4391 0.0702229 35.3604L2.65367 30.8997L5.22333 26.4372Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M40.9231 35.3398V13.4425C40.9231 11.7788 38.3397 11.7771 38.3397 13.4425V35.3398C38.3397 37.0018 40.9231 37.0053 40.9231 35.3398Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M38.5187 34.5975L23.614 46.6898L21.5093 48.3983C20.9633 48.8409 21.0581 49.764 21.5093 50.2256C22.0398 50.7664 22.7976 50.6631 23.3367 50.2256L38.2328 38.1334L40.3443 36.4266C40.8903 35.984 40.7973 35.0625 40.3443 34.5993C39.8156 34.0585 39.0561 34.1635 38.5187 34.5993V34.5975Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M39.6315 39.2288C41.7793 39.2288 43.5204 37.4876 43.5204 35.3398C43.5204 33.192 41.7793 31.4509 39.6315 31.4509C37.4836 31.4509 35.7425 33.192 35.7425 35.3398C35.7425 37.4876 37.4836 39.2288 39.6315 39.2288Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <div class="runtime">2hrs. 6min.</div>
+            </div>
+            <div class="wr_svg_con">
+              <svg
+                id="wr_svg"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 110 88.52"
+              >
+                <title>Wr icon</title>
+                <rect
+                  class="wr_shape"
+                  x="4.38"
+                  y="40.41"
+                  width="85.33"
+                  height="46.51"
+                />
+                <path
+                  class="wr_shape"
+                  d="M19.92,6A17.92,17.92,0,1,0,37.83,23.92,17.92,17.92,0,0,0,19.92,6Zm0,27.36a9.45,9.45,0,1,1,9.44-9.44A9.45,9.45,0,0,1,19.92,33.36Z"
+                  transform="translate(3 -6)"
+                />
+                <path
+                  class="wr_shape"
+                  d="M59.75,6A17.92,17.92,0,1,0,77.67,23.92,17.91,17.91,0,0,0,59.75,6Zm0,27.36a9.45,9.45,0,1,1,9.45-9.44A9.44,9.44,0,0,1,59.75,33.36Z"
+                  transform="translate(5 -6)"
+                />
+                <path
+                  class="wr_shape"
+                  d="M83.88,63.85h-7v12h7C86.4,80.72,92,84.1,98.53,84.1V55.72C92,55.72,86.49,59.06,83.88,63.85Z"
+                  transform="translate(10 -6)"
+                />
+                <text class="text" transform="translate(14.15 72.55)">
+                  4.1K
+                </text>
+              </svg>
+            </div>
+          </div>
+          <div class="bar_chart_con">
+            <div class="bar_chart_title">TOTAL LIFETIME GROSSES</div>
+            <div class="graph_con">
+              <div class="bar_con">
+                <div>
+                  <div class="o_w"></div>
+                  <div>
+                    <div>Opening Weekend</div>
+                  </div>
+                </div>
+                <div>
+                  <div class="dom"></div>
+                  <div><div>Domestic</div></div>
+                </div>
+                <div>
+                  <div class="for"></div>
+                  <div><div>Foreign</div></div>
+                </div>
+                <div>
+                  <div class="world"></div>
+                  <div><div>Worldwide</div></div>
+                </div>
+              </div>
+
+              <div class="value_con">
+                <div class="value">$0m</div>
+                <div class="value">$210M</div>
+                <div class="value">$420M</div>
+                <div class="value">$630M</div>
+                <div class="value">$840M</div>
+                <div class="value">$1.0B</div>
+                <div class="value">$1.2B</div>
+                <div class="value">$1.4B</div>
+                <div class="value">$1.6B</div>
+                <div class="value">$1.9B</div>
+                <div class="value">$2.1B</div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </template>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineMax.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
